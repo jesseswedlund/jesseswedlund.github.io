@@ -188,7 +188,7 @@
           star.disableBody(true, true);
           score += 10;
           scoreText.setText("Biden: " + score);
-          if (score === 10) bidenWins();
+          if (score === 270) bidenWins();
 
           if (stars.countActive(true) === 0 && trumps.countActive(true) === 0) {
             stars.children.iterate(function (child) {
