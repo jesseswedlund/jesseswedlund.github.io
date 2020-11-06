@@ -45,6 +45,7 @@
       let scoreText2;
       let bombs;
       let trumps;
+      let start = 0;
 
       //Preload grabs the images for our game
       function preload() {
@@ -185,7 +186,8 @@
         this.physics.add.overlap(player, trumps, collectTrump, null, this);
 
         function collectStar(player, star) {
-          music.play;
+          start++;
+          if (start === 1) music.play();
           star.disableBody(true, true);
           score += 10;
           scoreText.setText("Biden: " + score);
